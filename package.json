@@ -1,12 +1,12 @@
 {
   "name": "ro-crate-browser",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.4",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/main.d.ts",
-      "require": "./dist/main.js"
+      "default": "./dist/main.js"
     }
   },
   "main": "dist/main.js",
