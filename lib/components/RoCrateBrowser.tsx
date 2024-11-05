@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 // import './style.css';
 // @ts-expect-error
 import RoCrateSingleton from "../utils/roCrateSingleton";
+
 Modal.setAppElement('#root');
 
 // const modalStyle = {
@@ -32,9 +33,9 @@ type ModalProps = {
 };
 
 export const RoCrateBrowser: React.FC<ModalProps> = ({
-                                                  crateUrl,
-                                                  useButtonVariant,
-                                              }) => {
+                                                         crateUrl,
+                                                         useButtonVariant,
+                                                     }) => {
     const [cratePreview, setCratePreview] = useState('');
     const [crateModalOpen, setCrateModalOpen] = useState(false);
     const iframeRef = useRef<HTMLIFrameElement>(null);
