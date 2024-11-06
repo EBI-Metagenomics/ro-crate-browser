@@ -87,6 +87,7 @@ export const RoCrateBrowser: React.FC<ModalProps> = ({
       </span>
             <Modal
                 isOpen={crateModalOpen}
+                style={modalStyle}
                 onRequestClose={() => {
                     window.removeEventListener('message', handleIframeMessage);
                     setCrateModalOpen(false);
@@ -95,7 +96,6 @@ export const RoCrateBrowser: React.FC<ModalProps> = ({
                     window.addEventListener('message', handleIframeMessage);
                 }}
                 contentLabel="RO-Crate preview modal"
-                style={modalStyle}
             >
                 <div className="emg-modal-close">
                     <button
