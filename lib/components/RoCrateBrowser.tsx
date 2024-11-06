@@ -7,24 +7,24 @@ import RoCrateSingleton from "../utils/roCrateSingleton";
 
 Modal.setAppElement('#root');
 
-// const modalStyle = {
-//     overlay: {
-//         zIndex: 2000,
-//         position: 'fixed',
-//     },
-//     content: {
-//         top: '50%',
-//         left: '50%',
-//         right: 'auto',
-//         bottom: 'auto',
-//         marginRight: '-50%',
-//         transform: 'translate(-50%, -50%)',
-//         maxHeight: 'calc(100vh - 5em)',
-//         overflowY: 'auto',
-//         width: '80vw',
-//         height: '80vh',
-//     },
-// };
+const modalStyle = {
+    overlay: {
+        zIndex: 2000,
+        position: 'fixed',
+    },
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        maxHeight: 'calc(100vh - 5em)',
+        overflowY: 'auto',
+        width: '80vw',
+        height: '80vh',
+    },
+};
 
 type ModalProps = {
     crateUrl?: string;
@@ -95,6 +95,7 @@ export const RoCrateBrowser: React.FC<ModalProps> = ({
                     window.addEventListener('message', handleIframeMessage);
                 }}
                 contentLabel="RO-Crate preview modal"
+                style={modalStyle}
             >
                 <div className="emg-modal-close">
                     <button
