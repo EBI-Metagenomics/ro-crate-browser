@@ -1,13 +1,13 @@
 # RO-Crate Browser
 
-A React component for browsing RO-Crate content.
+A Web component for browsing RO-Crate content.
 
 ## Installation
 
 Install the package using npm:
 
 ```sh
-npm install ro-crate-browser
+npm install ro-crate-browser-component
 ```
 
 

@@ -1,9 +1,17 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" },
-    { "path": "./tsconfig.lib.json" }
-  ],
-//  "include": ["src", "lib"]
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "types": ["node"],
+    "declarationMap": true,  // Optional: generates declaration map files for easier debugging
+    "emitDeclarationOnly": true  // Ensures only type declaration files are emitted
+  },
+  "include": ["src/**/*", "src/utils/**/*"],
+  "exclude": ["node_modules"]
 }
